@@ -1,13 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Motor CYK con:
-- Carga de gramática desde archivo (A -> α | β | ...), epsilon como 'e'
-- Conversión a CNF (elimina ε, unitarias, terminales-en-reglas-largas, binariza)
-- CYK + reconstrucción de árbol (bracketed)
-- Dos tokenizadores:
-  1) expr_tokenize: para expresiones (+, *, (, ), id, números/identificadores → 'id')
-  2) word_tokenize: para oraciones en inglés (minúsculas, quita puntuación)
-"""
 
 from __future__ import annotations
 from collections import defaultdict, deque
